@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>iframe内联框架</title>
+</head>
+<body>
+
+<!--iframe内联框架
+    src：地址
+    name：识别标签，其它标签可以通过将name中的内容写入其它标签中target进行跳转
+    w、h：内联标签在页面中占用的窗口大小
+-->
+<iframe src="http://www.baidu.com" name="百度" frameborder="0" width="1000" height="800"></iframe>
+
+<!--通过内联框架中的name实现跳转-->
+<a href="" target="百度">点击跳转</a>
+
+
+</body>
+</html>
