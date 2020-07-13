@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <!--
+    颜色的三种表示：
+        单词
+        RGB 0-F
+        RGBA A：0-1
+
+    text-align：排版
+    text-indent: 2em; 段落首行缩进2个位置
+    -->
+    <style>
+        h1{
+            /*color: red;*/
+            /*color: #b3ffb4;*/
+            color: rgba(0,255,255,0.5);
+            text-align: center;
+        }
+        .p1{
+            text-indent: 2em;
+        }
+        .p3{
+            background: #b3ffb4;
+            height: 300px;
+            line-height: 300px;
+        }
+        .l1{
+            /*下划线*/
+            text-decoration: underline;
+        }
+        .l2{
+            /*中划线*/
+            text-decoration: line-through;
+        }
+        .l3{
+            /*上划线*/
+            text-decoration: overline;
+        }
+        /*水平对齐  参照物a，b{}*/
+        img,span{
+            vertical-align: middle;
+        }
+        /* a标签默认带下划线，如果要去下划线，就将值赋值为none就行了 */
+        a{
+            text-decoration: none;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<a href="">dasdas</a>
+
+<p>
+    <img src="image/pic.png" alt="">
+    <span>daosjdoiasidasjo</span>
+</p>
+
+<p class="l1">123</p>
+<p class="l2">123</p>
+<p class="l3">123</p>
+
+<h1>Java</h1>
+
+<p class="p1">
+    Java是一门面向对象编程语言，不仅吸收了C++语言的各种优点，还摒弃了C++里难以理解的多继承、指针等概念，因此Java语言具有功能强大和简单易用两个特征。
+</p>
+
+<p>
+    Java语言作为静态面向对象编程语言的代表，极好地实现了面向对象理论，允许程序员以优雅的思维方式进行复杂的编程
+</p>
+
+<p class="p3">Love is more than a word，
+
+    it says so much.
+
+    When I see these four letters,
+
+    I almost feel your touch.
+
+    This is only happened since，
+
+    I fell in love with you.
+
+    Why this word does this,
+
+    I haven't got a clue.
+</p>
+
+</body>
+</html>
