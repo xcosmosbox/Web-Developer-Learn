@@ -1,0 +1,35 @@
+#nav{
+    width: 300px;
+    background:#b3ffb4;
+}
+
+.title{
+    font-size: 18px;
+    font-weight: bold;
+    text-indent: 1em;
+    line-height: 35px;
+    /*颜色 图片 图片位置*/
+    background: red url("../../image/img.png") 270px 10px no-repeat;
+}
+
+/*
+    list-style:
+        none 去掉原点
+        circle 空心圆
+        decimal  数字
+        square  正方形
+*/
+ul li{
+    height: 30px;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #ffd155;
+}
+a:hover{
+    color: orange;
+    text-decoration: underline;
+}
