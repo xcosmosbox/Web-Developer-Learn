@@ -1,0 +1,42 @@
+#content{
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 25px;
+    border: 1px #000000 solid;
+}
+
+ul,li{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+/*父级元素相对定位*/
+#content ul{
+    position: relative;
+}
+
+.tipText,.tipBg{
+    position: absolute;
+    width: 380px;
+    top: 230px;
+}
+
+.tipText{
+    color: white;
+    /*z-index设施的是层级，层级越高，显示在越上层，最低是0，最高无限*/
+    z-index: 99;
+}
+
+.tipBg{
+    background: black;
+    /*设置透明度，两种写法最好都写上，
+        因为opacity是最新的写法，但为了让旧版本的浏览器兼容
+        第二个写法就是为了能让不兼容的旧版本浏览器能够正常显示的
+        浏览器会自己选择在一个进行加载
+    */
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
