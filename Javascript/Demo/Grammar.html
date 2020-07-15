@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <!--JavaScript严格区分大小写-->
+    <script>
+        'use strict'
+        // 1.定义变量   变量类型  变量名=变量值;
+        // let 是局部变量
+        // var 是全局变量
+        // const 是常量
+        var  score = 70;
+
+        // 2.条件控制
+        if (score>10 && score<70){
+            alert('1');
+        }
+        else if (score>70) {
+            alert("2")
+        }
+        else {
+            alert('3')
+        }
+
+        // console.log(变量) 在浏览器的控制台打印变量
+
+        var person = {
+            name:"zhangsan",
+            age:18,
+            tags:['js','java','javascript','python']
+        }
+
+        var msg = `
+            你好啊
+            啊
+            哈哈
+            231
+            name
+            true
+            嘿
+            ！
+        `
+
+        // let name = "zhangsan";
+        // let age = 18;
+        // let str = `你好啊，${name}`;
+
+        //学生的map成绩
+        var map = new Map([['tom',100],['jack',90]]);
+        var name = map.get('tom'); //通过key获得value
+        map.set('admin',12345);//向map集合的尾部添加一个键值对(也可以用于修改，如果其中有一个相同的键)
+        map.delete('tom');//删除一个键值对
+        console.log(name);
+
+        //创建一个set集合
+        //注意：Set集合是一个无序不重复的集合
+        var set = new Set([3,1,1,1,1]);
+        set.add(2); //添加
+        set.delete(1); //删除
+        console.log(set.has(3)); //判断是否包含某个元素
+
+        //通过for of遍历数组
+        var arr = [3,4,5];
+        for(let x of arr){
+            console.log(x);
+        }
+
+        //遍历map
+        for (let x of map){
+            console.log(x);
+        }
+
+        //遍历set
+        for (let x of set){
+            console.log(x);
+        }
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>
