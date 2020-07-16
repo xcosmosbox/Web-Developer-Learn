@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script>
+
+        class Student{
+            constructor(name){
+                this.name = name;
+            };
+
+            hello(){
+                alert("hello "+this.name);
+            };
+        }
+
+        //初始化小明
+        var xiaoming = new Student("xiaoming");
+
+        //大学生类继承学生类
+        class collegeStudent extends Student{
+            constructor(name,grade){
+                super(name);
+                this.grade = grade;
+            }
+
+            myGrade(){
+                alert("我叫"+this.name+" 我的年级是 "+this.grade);
+            }
+        }
+
+        //初始化小红
+        var xiaohong = new collegeStudent("xiaohong",14);
+
+
+    </script>
+
+
+
+</head>
+<body>
+
+</body>
+</html>
