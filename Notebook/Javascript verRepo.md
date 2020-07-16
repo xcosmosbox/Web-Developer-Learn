@@ -1338,3 +1338,144 @@ DOM：文档对象模型
 </script>
 ```
 
+
+
+### jQuery
+
+jQuery库中存在大量的JavaScript函数
+
+> 获取jQuery
+
+```html
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <!--导入jQuery，因为是导入的微软的，所以还存在CDN加速-->
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.1.min.js"></script>
+
+</head>
+```
+
+
+
+jQuery公式：`$(selector).action()`
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <!--导入jQuery，因为是导入的微软的，所以还存在CDN加速-->
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.1.min.js"></script>
+
+</head>
+<body>
+
+<a href="" id="test-jquery">点击此处</a>
+
+<script>
+    //jQuery公式的本质其实就是css的选择器
+    $('#test-jquery').click(function () {
+        alert('hello jQuery!');
+    })
+</script>
+
+</body>
+</html>
+```
+
+
+
+> 选择器
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--导入jQuery，因为是导入的微软的，所以还存在CDN加速-->
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.1.min.js"></script>
+</head>
+<body>
+
+<script>
+    //jQuery中的标签、id、class选择器
+    $('p').click(); //标签选择器
+    $('#id').click(); //id选择器
+    $('.class').click(); //class选择器
+</script>
+
+</body>
+</html>
+```
+
+
+
+> 事件
+
+节点文本操作
+
+```html
+    $('#test-ul li[name=python]').text(); //获得值
+    $('#test-ul li[name=python]').text('123'); //设置值
+    $('#test-ul').html(); //获得值
+    $('#test-ul').html('<strong>123</strong>'); //设置值
+```
+
+css操作
+
+```html
+    $('#test-ul li[name=python]').css('{"color","red"}');
+```
+
+元素的显示和隐藏（本质其实就是修改`display：none`）
+
+```html
+    $('#test-ul li[name=python]').show();
+    $('#test-ul li[name=python]').hide();
+```
+
+
+
+代码演示：
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--导入jQuery，因为是导入的微软的，所以还存在CDN加速-->
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.1.min.js"></script>
+</head>
+<body>
+
+<ul id="test-ul">
+    <li class="js">js</li>
+    <li name="python">python</li>
+</ul>
+
+<script>
+    //节点文本操作
+    $('#test-ul li[name=python]').text(); //获得值
+    $('#test-ul li[name=python]').text('123'); //设置值
+    $('#test-ul').html(); //获得值
+    $('#test-ul').html('<strong>123</strong>'); //设置值
+
+    //css操作
+    $('#test-ul li[name=python]').css('{"color","red"}');
+
+    //元素的显示和隐藏
+    $('#test-ul li[name=python]').show();
+    $('#test-ul li[name=python]').hide();
+
+</script>
+
+</body>
+</html>
+```
+
