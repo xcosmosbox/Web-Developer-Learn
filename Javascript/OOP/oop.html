@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script>
+
+        //人类原型
+        var Person = {
+            name:"renlei",
+            age:18,
+            state:"run",
+            run:function () {
+                console.log(this.name + " run......");
+            }
+        };
+
+        //小明首先创建了自己的名字，并将自己的原型指向人类（这个时候就同时实现了继承和多态）
+        var xiaoming = {
+            name: "xiaoming"
+        };
+        xiaoming.__proto__ = Person; //此时就完成了对于原型的实例化，此时才能被称作为一个对象
+
+
+
+    </script>
+
+
+</head>
+<body>
+
+</body>
+</html>
