@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script>
+        var java = {
+            name:'zhangsan',
+            birth:2000,
+
+            //这个就叫方法
+            age:getAge
+        }
+
+        function getAge() {
+            //今年减去出生年
+            var now = new Date().getFullYear();
+            return now-this.birth;
+        }
+
+        // 此时，this. 指向了java，且参数为空。
+        getAge.apply(java,[]);
+
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>
