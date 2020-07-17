@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<p id="js">JavaScript</p>
+<div id="list">
+    <p id="ee">javaee</p>
+    <p id="se">javase</p>
+    <p id="me">javame</p>
+</div>
+
+<script>
+    <!-- 方法1
+        将已存在的节点插入
+    -->
+    //获取指针
+    var js = document.getElementById('js'); //这个是一个已存在的节点
+    var list = document.getElementById('list');
+
+    //追加标签
+    list.appendChild(js);
+
+
+    <!-- 方法2
+        创建一个新的节点并插入
+    -->
+    //通过JS创建一个新的节点
+    var newP = document.createElement('p') //创建一个p标签
+    newP.id = 'newP';
+    newP.innerText = "hello,world";
+
+    //追加标签
+    list.appendChild(newP);
+
+    //通过这样的属性，就能设置任意的值了。
+    var myScript = document.createElement('script');
+    myScript.setAttribute('type','text/javascript'); //键值对
+
+</script>
+
+</body>
+</html>
