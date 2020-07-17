@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div id="father">
+    <h>title</h>
+    <p id="p1">p1</p>
+    <p class="p2">p2</p>
+</div>
+
+<script>
+    //对应css中的选择器
+    var p1 = document.getElementById('p1');
+    var father = p1.parentElement;
+
+    //删除节点
+    father.removeChild(p1)
+</script>
+
+
+</body>
+</html>
