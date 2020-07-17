@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div id="id1"></div>
+
+<script>
+
+    //得到id1中的内容并将结果返回给变量
+    var id1 = document.getElementById('id1');
+
+    //修改id1中的文本内容
+    id1.innerText = '456';
+
+    //操作css
+    id1.style.color = 'red'; //属性使用字符串包裹
+    id1.style.fontSize = '20px';
+    id1.style.padding = '2em';
+
+    //可以解析HTML文本标签
+    id1.innerHTML = '<strong>123</strong>'
+
+</script>
+
+
+</body>
+</html>
