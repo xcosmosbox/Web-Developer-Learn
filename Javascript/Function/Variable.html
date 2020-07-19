@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script>
+        function f2() {
+            var x = 1;
+
+            //内部函数可以访问外部函数的变量
+            function f3() {
+                var y = x + 1;
+            }
+        }
+
+        function q1() {
+            var x = 1;
+            function q2() {
+                var x = 'A';
+                console.log('inner'+x); //innerA
+            }
+            console.log('outer'+x); //outer1
+            q2();
+        }
+
+        function q3() {
+            var x = "x" + y;
+            console.log(x);
+            var y = 'y';
+        }
+
+        //全局变量
+        var m = 1;
+        function f5() {
+            console.log(m);
+        }
+        f5();
+        console.log(m);
+
+        var n = 'nnn';
+        alert(n);
+        alert(window.n); //默认所有的全局变量，都会自动绑定在window对象下
+
+        //唯一全局变量
+        var V  = {};
+
+        //定义全局变量
+        V.name = "zhangsan";
+        V.add = function (a,b) {
+            return a+b;
+        }
+
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>
