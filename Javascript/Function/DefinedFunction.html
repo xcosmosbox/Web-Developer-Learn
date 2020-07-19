@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script>
+        function abs(x) {
+            //手动抛出异常来判断
+            if (typeof x!= 'number'){
+                throw 'Not a number!'
+            }
+
+            //当传递了多个参数进来时，可以使用arguments来打印多余的参数
+            for (let i=0; i<arguments.length; i++){
+                console.log(arguments[i]);
+            }
+
+            if (x>=0){
+                return x;
+            }
+            else
+            {
+                return -x;
+            }
+        }
+
+        // ...rest是固定写法
+        function example(a,b,...rest) {
+            console.log("a=>"+a);
+            console.log("b=>"+b);
+            console.log(rest);
+        }
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
