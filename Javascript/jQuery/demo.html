@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <!--导入jQuery，因为是导入的微软的，所以还存在CDN加速-->
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.1.min.js"></script>
+
+</head>
+<body>
+
+<a href="" id="test-jquery">点击此处</a>
+
+<script>
+    //jQuery公式的本质其实就是css的选择器
+    $('#test-jquery').click(function () {
+        alert('hello jQuery!');
+    })
+</script>
+
+</body>
+</html>
