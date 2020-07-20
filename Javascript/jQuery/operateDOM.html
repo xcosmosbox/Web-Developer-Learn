@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--导入jQuery，因为是导入的微软的，所以还存在CDN加速-->
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.1.min.js"></script>
+</head>
+<body>
+
+<ul id="test-ul">
+    <li class="js">js</li>
+    <li name="python">python</li>
+</ul>
+
+<script>
+    //节点文本操作
+    $('#test-ul li[name=python]').text(); //获得值
+    $('#test-ul li[name=python]').text('123'); //设置值
+    $('#test-ul').html(); //获得值
+    $('#test-ul').html('<strong>123</strong>'); //设置值
+
+    //css操作
+    $('#test-ul li[name=python]').css('{"color","red"}');
+
+    //元素的显示和隐藏
+    $('#test-ul li[name=python]').show();
+    $('#test-ul li[name=python]').hide();
+
+</script>
+
+</body>
+</html>
