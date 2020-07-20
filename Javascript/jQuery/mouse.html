@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--导入jQuery，因为是导入的微软的，所以还存在CDN加速-->
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.1.min.js"></script>
+    <style>
+        #divMove{
+            width: 500px;
+            height: 500px;
+            border: 1px solid red;
+        }
+    </style>
+
+</head>
+<body>
+
+<!--获取鼠标当前的坐标-->
+mouse:<span id="mouseMove"></span>
+<div id="divMove">
+    在这个区域内移动鼠标
+</div>
+
+<script>
+    //当网页元素加载完毕之后，响应事件
+    $(function () {
+        $('#divMove').mousemove(function (e) {
+            $('#mouseMove').text('x:'+e.pageX+" "+"y:"+e.pageY);
+        })
+    });
+</script>
+</body>
+</html>
