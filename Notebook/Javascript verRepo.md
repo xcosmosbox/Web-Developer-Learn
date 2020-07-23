@@ -1294,7 +1294,7 @@ DOM：文档对象模型
 > 表单是什么？ form标签 、 DOM树
 
 - 文本框  text
-- 下拉框  <select>
+- 下拉框  `<select>`
 - 单选框  radio
 - 多选框  checkbox
 - 隐藏域  hidden
@@ -1419,7 +1419,7 @@ jQuery公式：`$(selector).action()`
 
 节点文本操作
 
-```html
+```javascript
     $('#test-ul li[name=python]').text(); //获得值
     $('#test-ul li[name=python]').text('123'); //设置值
     $('#test-ul').html(); //获得值
@@ -1428,18 +1428,16 @@ jQuery公式：`$(selector).action()`
 
 css操作
 
-```html
+```javascript
     $('#test-ul li[name=python]').css('{"color","red"}');
 ```
 
 元素的显示和隐藏（本质其实就是修改`display：none`）
 
-```html
+```javascript
     $('#test-ul li[name=python]').show();
     $('#test-ul li[name=python]').hide();
 ```
-
-
 
 代码演示：
 
